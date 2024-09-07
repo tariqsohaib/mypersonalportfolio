@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio|Sohaib Tariq</title>
+</head>
+<body>
+    <div class="background">
+     <div class="nav">
+     <a class="a active" href="#">HOME</a>
+     <a class="b" href="#">ABOUT ME</a>
+     <a class="c" href="#">GALLERY</a>
+     <a class="d" href="#">CONTACT US</a>    
+     </div>
+
+     <div class="content">
+         <div class="home">
+             <h1>I am Sohaib Tariq</h1>
+             <h3>Junior Photographer</h3>
+         </div>
+         <div class="aboutus">
+             <p><b>Hello Friends Assalam O Allikum,</b><br>
+              Welcome to my <b>Portfolio Website</b> <br>
+              This Portfolio is all about Web Design , Web Development , Logo Design , Banner Design , Portfolio Design , Application Design And Much More... 
+              <br>
+              <p><br>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br>
+                    when an unknown printer took a galley of type and scrambled it to make a type<br>
+                    specimen book. It has survived not only five centuries, but also the leap <br>
+                    into electronic typesetting, remaining essentially unchanged. It was popularised<br>
+                    in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,<br>
+                    and more recently with desktop publishing software like Aldus PageMaker including<br>
+                    versions of Lorem Ipsum.
+              </p>
+            </p>
+         </div> 
+         <div class="gallery">
+             <div class="image">
+                 <img src = "images/1.jpg"/>
+                </div>
+                
+                <div class="image">
+                    <img src = "images/2.jpg"/>
+                   </div>
+
+                   <div class="image">
+                    <img src = "images/3.jpg"/>
+                   </div>
+
+                   <div class="image">
+                    <img src = "images/4.jpg"/>
+                   </div>
+
+                   <div class="image">
+                    <img src = "images/5.jpg"/>
+                   </div>
+
+                   <div class="image">
+                    <img src = "images/6.jpg"/>
+                   </div>
+
+                   <div class="image">
+                    <img src = "images/7.jpg"/>
+                   </div>
+
+                   <div class="image">
+                    <img src = "images/8.jpg"/>
+                   </div>
+
+                   <div class="image">
+                    <img src = "images/9.jpg"/>
+                   </div>
+
+             </div>
+
+             <div class="contactus">
+                 <div class="contactform">
+                     <form action="index.html" method="post">
+                         <input type="text" name="" class="inputtext" placeholder="Your Name">
+                         <input type="text" name="" class="inputtext" placeholder="Your Email Address">
+                         <input type="number" name="" class="inputtext" placeholder="Your Phone Number">
+                         <textarea name="" id="" cols="4" rows="6" class="inputmessage" placeholder="Type your Message Here..."></textarea>
+                         <input type="button" name="" class="submitbutton" value="Submit">
+                     </form>
+                 </div>
+             </div>
+
+         </div>   
+     </div>
+
+    </div>
+
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+        $('a').click(function(){
+            //alert("i m click");
+            var selected = $(this);
+            $('a').removeClass('active');
+            $(selected).addClass('active');
+        });
+    
+
+    var $a = $('.a'),
+    $b = $('.b'),
+    $c = $('.c'),
+    $d = $('.d'),
+    $home = $('.home'),
+    $aboutus = $('.aboutus');
+    $gallery = $('.gallery'),
+    $contactus = $('.contactus'),
+    
+
+
+    $a.click(function(){
+        $home.fadeIn();
+        $aboutus.fadeOut();
+        $gallery.fadeOut();
+        $contactus.fadeOut();
+        
+    });
+    $b.click(function(){
+        $aboutus.fadeIn();
+        $home.fadeOut();
+        $gallery.fadeOut();
+        $contactus.fadeOut();
+    });
+    $c.click(function(){
+        $gallery.fadeIn();
+        $home.fadeOut();
+        $aboutus.fadeOut();
+        $contactus.fadeOut();
+    });
+    $d.click(function(){
+        $contactus.fadeIn();
+        $home.fadeOut();
+        $aboutus.fadeOut();
+        $gallery.fadeOut();
+            
+    });
+    });
+
+
+    </script>
+</body>
+</html>
